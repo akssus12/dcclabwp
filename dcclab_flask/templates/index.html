@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}" type="text/css">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div id="section1">
+            <div class="text">
+                <h1>
+                    Welcome to
+                </h1>
+                <p class="subTitle">
+                    DCC Lab in Department of Computer Science<br> 
+                    and Engineering, <strong>Sogang University</strong>
+                </p>
+                <p class="notice">
+                    Le site de la ville de Biesheim utilise des cookies. Certains de ces cookies que nous utilisons sont essentiels au<br> 
+                    bon fonctionnement de certaines parties du site et ont déjà été configurés.<br> 
+                    Plus d'informations dans la page mentions légales. 
+                </p>
+                <div class="button">
+                   <a href="#">
+                      <div class="icon">
+                          <img src="{{ url_for('static', filename= 'img/icon.png') }}">
+                      </div>
+                   View more
+                   </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="wrap">
+                <h1>Recent News</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="kboard-latest-title">제목</th>
+                            <th class="kboard-latest-date">작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="kboard-latest-title">
+                                <a href="#">
+                                    <div class="kboard-avatar-cut-strings">
+                                        (Cluster Computing(SCI)): A paper is accepted to appear in the Cluster Computing Journal !	
+                                    </div>
+                                    <span class="kboard-comments-count"></span>
+                                </a>
+                            </td>
+                            <td class="kboard-latest-date">
+                                2019.00.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="kboard-latest-title">
+                                <a href="#">
+                                    <div class="kboard-avatar-cut-strings">
+                                        (Cluster Computing(SCI)): A paper is accepted to appear in the Cluster Computing Journal !	
+                                    </div>
+                                    <span class="kboard-comments-count"></span>
+                                </a>
+                            </td>
+                            <td class="kboard-latest-date">
+                                2019.00.00
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="section3">
+            <div class="wrap">
+                <h1>Contact US</h1>
+                <div class="right">
+                    <p> 
+                        <img src="{{ url_for('static', filename= 'img/ic03.png') }}" width="28">
+                        <strong>Address</strong> <br>  Department of Computer Science and Engineering, Sogang University  35,<br> Baekbeom-ro, Mapo-gu, Seoul, Korea(AS712A, AS709)
+                    </p>
+                    <br>
+                    <p>
+                        <img src="{{ url_for('static', filename= 'img/ic01.png') }}" width="30">
+                        <strong>Number</strong> <br> (Tel)02-3273-8783
+                    </p>
+                    <br>
+                    <p>
+                        <img src="{{ url_for('static', filename= 'img/ic02.png') }}" width="34">
+                        <strong>E-Mail</strong> <br> dcclab.sogang.univ_AT_gmail.com
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6326.447854146895!2d126.94075640037023!3d37.54978770303314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98bd1eb4e693%3A0x1cd37e9ac33ba2af!2z7ISc7Jq47Yq567OE7IucIOyLoOyImOuPmSDshJzqsJXrjIDtlZnqtZAg7JWE64u07IOs6rSA!5e0!3m2!1sko!2skr!4v1569062904055!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

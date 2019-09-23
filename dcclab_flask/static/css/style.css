@@ -1,0 +1,133 @@
+* { margin:0px;padding:0px;}
+ul { list-style:none;}
+a { text-decoration:none;}
+img { border:none; vertical-align:top;}
+body{font-family: 'Roboto', sans-serif;}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,900,900i&display=swap');
+::-moz-selection { color:#fff; background:#ff0000; }
+::selection { color:#fff; background:#ff0000; }
+
+
+
+#header{ width: 100%; height: 86px; position: fixed; background-color: white;}
+#header .wrap{width: 1300px; margin: 0 auto; overflow: hidden; position: relative;}
+#header .logo img{width: 170px; float: left; margin-top: 15px;}
+#header .menu{float: right;}
+#header .menu li{float: left; margin-left: 25px; font-size: 16px;  font-weight: 600; margin-top: 40px;}
+#header .menu li.hamb{cursor: pointer;}
+#header .menu li a{color:#3e3e3e;}
+#header .menu li a:hover{color: #dd1818; transition: all 0.3s;}
+#header .menu li.on a{color: #dd1818; border-bottom: 3px solid red;}
+
+#header .hamb{position:absolute; top:20px; right: 0; cursor: pointer;  display: none;}
+#header #h_menu{position: fixed; top:0; left:0; width: 100%; height: 100%; background-color: rgba(15, 15, 15, 0.84); z-index: 1000; text-align: center; display: none; }
+#header #h_menu.show{display: block;}
+#header #h_menu ul{padding-top: 110px;}
+#header #h_menu a{color:white; font-size: 20px; line-height: 50px;  } 
+#header #h_menu li.on a{color: #dd1818;}
+#header #h_menu .cross{position: absolute; top:20px; left: 20px; width: 32px; cursor: pointer;}
+#header #h_menu .cross img {width: 100%;}
+
+#footer{background-color: #414141;}
+#footer div{width: 1000px; margin: 0 auto; padding:20px 0px 15px 0px; overflow: hidden;} 
+#footer img{float: left; width: 100px;}
+#footer p{float: left; margin-left: 30px; margin-top: 0px; color:#969696; font-size: 15px; line-height: 35px;}
+#footer p span{color:#727272; font-size: 12px; }
+
+#container #section1{width: 100%; padding-top: 86px; background:url(../img/bg_img.jpg) no-repeat; background-position: center center; background-size: cover;}
+#container #section1 .text{width:1300px; margin: 0 auto; color:#ffffff; padding:250px 20px 150px 20px;  font-weight: 800; letter-spacing: 1px;}
+#container #section1 .text h1{ font-size: 60px; }
+#container #section1 .text .subTitle{color:white; font-weight: 400; font-size: 27px; line-height: 30px; }
+#container #section1 .text .notice{font-weight: 100; margin-top: 40px;}
+#container #section1 .text .button{width: 140px; font-weight: 100; border: 1px solid #ffffff; margin-top: 10px; overflow: hidden; transition: all 0.3s;}
+#container #section1 .text .button:hover{border: 1px solid #ff003b;}
+#container #section1 .text .button a{width: 100%; height: 100%; display: block; padding-top: 7px; padding-bottom: 7px; color:white; transition: all 0.3s;}
+#container #section1 .text .button a:hover{background-color:#ff003b; }
+#container #section1 .text .button .icon {margin-left:10px; position:relative; width: 25px; height: 25px; overflow: hidden; float: left; margin-right: 5px; }
+#container #section1 .text .button .icon img{width: 46px; position: absolute; top:0; left: 0; transition: all 0.2s; z-index: 1;}
+#container #section1 .text .button:hover .icon img{top:0px; left: -24px;}
+
+#container #section2{background-color: #f0f3f8; padding: 60px 0 60px 0;}
+#container #section2 .wrap{width: 1300px; margin: 0 auto; overflow: hidden;}
+#container #section2 .wrap h1{font-size: 40px; color:#313131; float: left; margin-right:50px; }
+#container #section2 .wrap table{float: left;  margin-top: 15px;}
+#container #section2 .wrap table thead{display: none;}
+#container #section2 .wrap table tr{margin-bottom: 0px; font-size: 19px;}
+#container #section2 .wrap table tr a{color:#ff003b; margin-bottom: 5px; display: block; transition: all 0.2s;}
+#container #section2 .wrap table tr a:hover{color:#313131;}
+#container #section2 .wrap table tr .kboard-latest-date{display: none;}
+
+#container #section3{}
+#container #section3 .wrap{width: 1300px; margin: 0 auto; overflow: hidden;}
+#container #section3 .wrap h1{font-size: 40px; color:#313131; float: left; margin-right:80px; padding: 60px 0 10px 0; }
+#container #section3 .wrap .right{float: left; padding: 75px 0px 165px 0px; font-size: 19px; color:#272727;}
+#container #section3 .wrap .right iframe{width: 1000px; height: 450px; background-color: red; margin-top: 30px;}
+
+@media screen and (max-width:1024px){
+    
+    #header{ width: 100%; height: 72px;}
+    #header .wrap{width: 90%;}
+    #header .logo img{width: 130px; float: left; margin-top: 15px;}
+    #header .menu li{display: none; float: left; margin-left: 25px; font-size: 16px;  font-weight: 600; margin-top: 25px;}
+    #header .menu li a{color:#3e3e3e;}
+    #header .menu li a:hover{color: #dd1818; transition: all 0.3s;}
+    #header .menu li.on a{color: #dd1818; border-bottom: 3px solid red;}
+    
+    #header .hamb{display: block;}
+
+    #footer div{width: 100%;} 
+    #footer img{float: left; width: 18%; margin-left: 2%}
+    #footer p{float: left; width: 75%; margin-left: 5%; }
+
+    #container #section1{padding-top: 80px;}
+    #container #section1 .text{width:93%;}
+    #container #section1 .text .notice{font-size: 13px; text-align: left; line-height: 21px;}
+    #container #section1 .text .button{width: 50%; height: 40px; margin: 0 auto; margin-top: 60px; text-align: center; background-color: #ff003b; border: 1px solid #dd1818; }
+    #container #section1 .text .button .icon{display: none;}
+
+    #container #section2{background-color: #f0f3f8; padding: 60px 0 60px 0;}
+    #container #section2 .wrap{width: 93%;}
+    #container #section2 .wrap h1{font-size: 35px; margin-right:0px; float: none; }
+    #container #section2 .wrap table{ margin-top: 15px; float: none;}
+    #container #section2 .wrap table tr{  margin-bottom: 0px; font-size: 17px; }
+    
+    #container #section3{}
+    #container #section3 .wrap{width: 95%;}
+    #container #section3 .wrap h1{font-size: 35px; margin-right:0px; padding: 60px 0 0 0; float: none; }
+    #container #section3 .wrap .right{float: none; padding: 25px 0px 105px 0px; font-size: 17px; color:#272727; }
+    #container #section3 .wrap .right iframe{width: 100%; height: 400px; background-color: red; margin-top: 30px;}
+}
+
+@media screen and (max-width:740px){
+    
+    #header{ width: 100%; height: 55px;}
+    #header .wrap{width: 90%;}
+    #header .logo img{width: 120px; float: left; margin-top: 10px;}
+    #header .menu li{display: none; float: left; margin-left: 25px; font-size: 16px;  font-weight: 600; margin-top: 25px;}
+    
+    #header .hamb{display: block; width: 30px; margin-top: -5px;}
+    #header .hamb img{width: 100%}
+
+
+    #footer div{width: 98%; padding: 15px 0 10px 0;} 
+    #footer img{display: none; }
+    #footer p{float: none; width: 100%; margin-left: 0; margin-top: 0;  font-size: 14px; text-align: center; }
+
+    #container #section1{padding-top: 0px;}
+    #container #section1 .text{width:90%; padding: 100px 0 60px 0;}
+    #container #section1 .text h1{font-size: 45px;}
+    #container #section1 .text .subTitle{font-size: 23px;}
+    #container #section1 .text .notice{font-size: 13px; text-align: left; line-height: 21px;}
+    #container #section1 .text .button{width: 90%; height: 34px; margin: 0 auto; margin-top: 50px; text-align: center; background-color: #ff003b; border: 1px solid #dd1818; }
+    #container #section1 .text .button .icon{display: none;}
+
+
+    #container #section2{padding: 50px 0 50px 0;}
+    #container #section2 .wrap{width: 90%;}
+    #container #section2 .wrap h1{font-size: 30px; margin-right:0px; float:none; text-align: center}
+    #container #section2 .wrap table tr{font-size: 14px; }
+    
+    #container #section3 .wrap{width: 90%}
+    #container #section3 .wrap h1{font-size: 30px; margin-right:0px; padding: 50px 0 0 0; text-align: center; }
+    #container #section3 .wrap .right{float: none; padding: 25px 0px 100px 0px; font-size: 15px;}
+}
